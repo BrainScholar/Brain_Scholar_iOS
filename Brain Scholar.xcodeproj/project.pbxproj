@@ -31,6 +31,20 @@
 			remoteGlobalIDString = AFFC7FEE1F0D3C1600E8F6E8;
 			remoteInfo = "Brain Scholar";
 		};
+		AFFC80251F0D5A0200E8F6E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFFC80201F0D5A0000E8F6E8 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		AFFC80271F0D5A0200E8F6E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFFC80201F0D5A0000E8F6E8 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +61,7 @@
 		AFFC800E1F0D3C1700E8F6E8 /* Brain ScholarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brain ScholarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFC80121F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain_ScholarUITests.swift; sourceTree = "<group>"; };
 		AFFC80141F0D3C1700E8F6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFC80201F0D5A0000E8F6E8 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +92,7 @@
 		AFFC7FE61F0D3C1500E8F6E8 = {
 			isa = PBXGroup;
 			children = (
+				AFFC80201F0D5A0000E8F6E8 /* Charts.xcodeproj */,
 				AFFC7FF11F0D3C1600E8F6E8 /* Brain Scholar */,
 				AFFC80061F0D3C1700E8F6E8 /* Brain ScholarTests */,
 				AFFC80111F0D3C1700E8F6E8 /* Brain ScholarUITests */,
@@ -123,6 +139,15 @@
 				AFFC80141F0D3C1700E8F6E8 /* Info.plist */,
 			);
 			path = "Brain ScholarUITests";
+			sourceTree = "<group>";
+		};
+		AFFC80211F0D5A0000E8F6E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFFC80261F0D5A0200E8F6E8 /* Charts.framework */,
+				AFFC80281F0D5A0200E8F6E8 /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +246,12 @@
 			mainGroup = AFFC7FE61F0D3C1500E8F6E8;
 			productRefGroup = AFFC7FF01F0D3C1600E8F6E8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AFFC80211F0D5A0000E8F6E8 /* Products */;
+					ProjectRef = AFFC80201F0D5A0000E8F6E8 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AFFC7FEE1F0D3C1600E8F6E8 /* Brain Scholar */,
@@ -229,6 +260,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AFFC80261F0D5A0200E8F6E8 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = AFFC80251F0D5A0200E8F6E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFFC80281F0D5A0200E8F6E8 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = AFFC80271F0D5A0200E8F6E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AFFC7FED1F0D3C1600E8F6E8 /* Resources */ = {
