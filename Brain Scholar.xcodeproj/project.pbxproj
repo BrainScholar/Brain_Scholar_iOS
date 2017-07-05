@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFFC7FF31F0D3C1600E8F6E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */; };
+		AFFC7FF51F0D3C1600E8F6E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */; };
+		AFFC7FF81F0D3C1600E8F6E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFC7FF61F0D3C1600E8F6E8 /* Main.storyboard */; };
+		AFFC7FFA1F0D3C1600E8F6E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFC7FF91F0D3C1600E8F6E8 /* Assets.xcassets */; };
+		AFFC7FFD1F0D3C1600E8F6E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFC7FFB1F0D3C1600E8F6E8 /* LaunchScreen.storyboard */; };
+		AFFC80081F0D3C1700E8F6E8 /* Brain_ScholarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80071F0D3C1700E8F6E8 /* Brain_ScholarTests.swift */; };
+		AFFC80131F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80121F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFFC80041F0D3C1700E8F6E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFFC7FE71F0D3C1500E8F6E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFFC7FEE1F0D3C1600E8F6E8;
+			remoteInfo = "Brain Scholar";
+		};
+		AFFC800F1F0D3C1700E8F6E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFFC7FE71F0D3C1500E8F6E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFFC7FEE1F0D3C1600E8F6E8;
+			remoteInfo = "Brain Scholar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFFC7FEF1F0D3C1600E8F6E8 /* Brain Scholar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brain Scholar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFFC7FF71F0D3C1600E8F6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFFC7FF91F0D3C1600E8F6E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFFC7FFC1F0D3C1600E8F6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFFC7FFE1F0D3C1600E8F6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFC80031F0D3C1700E8F6E8 /* Brain ScholarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brain ScholarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFC80071F0D3C1700E8F6E8 /* Brain_ScholarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain_ScholarTests.swift; sourceTree = "<group>"; };
+		AFFC80091F0D3C1700E8F6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFC800E1F0D3C1700E8F6E8 /* Brain ScholarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brain ScholarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFC80121F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain_ScholarUITests.swift; sourceTree = "<group>"; };
+		AFFC80141F0D3C1700E8F6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFFC7FEC1F0D3C1600E8F6E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFC80001F0D3C1700E8F6E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFC800B1F0D3C1700E8F6E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFFC7FE61F0D3C1500E8F6E8 = {
+			isa = PBXGroup;
+			children = (
+				AFFC7FF11F0D3C1600E8F6E8 /* Brain Scholar */,
+				AFFC80061F0D3C1700E8F6E8 /* Brain ScholarTests */,
+				AFFC80111F0D3C1700E8F6E8 /* Brain ScholarUITests */,
+				AFFC7FF01F0D3C1600E8F6E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFFC7FF01F0D3C1600E8F6E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFFC7FEF1F0D3C1600E8F6E8 /* Brain Scholar.app */,
+				AFFC80031F0D3C1700E8F6E8 /* Brain ScholarTests.xctest */,
+				AFFC800E1F0D3C1700E8F6E8 /* Brain ScholarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFFC7FF11F0D3C1600E8F6E8 /* Brain Scholar */ = {
+			isa = PBXGroup;
+			children = (
+				AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */,
+				AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */,
+				AFFC7FF61F0D3C1600E8F6E8 /* Main.storyboard */,
+				AFFC7FF91F0D3C1600E8F6E8 /* Assets.xcassets */,
+				AFFC7FFB1F0D3C1600E8F6E8 /* LaunchScreen.storyboard */,
+				AFFC7FFE1F0D3C1600E8F6E8 /* Info.plist */,
+			);
+			path = "Brain Scholar";
+			sourceTree = "<group>";
+		};
+		AFFC80061F0D3C1700E8F6E8 /* Brain ScholarTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFFC80071F0D3C1700E8F6E8 /* Brain_ScholarTests.swift */,
+				AFFC80091F0D3C1700E8F6E8 /* Info.plist */,
+			);
+			path = "Brain ScholarTests";
+			sourceTree = "<group>";
+		};
+		AFFC80111F0D3C1700E8F6E8 /* Brain ScholarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFFC80121F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift */,
+				AFFC80141F0D3C1700E8F6E8 /* Info.plist */,
+			);
+			path = "Brain ScholarUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFFC7FEE1F0D3C1600E8F6E8 /* Brain Scholar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFC80171F0D3C1700E8F6E8 /* Build configuration list for PBXNativeTarget "Brain Scholar" */;
+			buildPhases = (
+				AFFC7FEB1F0D3C1600E8F6E8 /* Sources */,
+				AFFC7FEC1F0D3C1600E8F6E8 /* Frameworks */,
+				AFFC7FED1F0D3C1600E8F6E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brain Scholar";
+			productName = "Brain Scholar";
+			productReference = AFFC7FEF1F0D3C1600E8F6E8 /* Brain Scholar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFFC80021F0D3C1700E8F6E8 /* Brain ScholarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFC801A1F0D3C1700E8F6E8 /* Build configuration list for PBXNativeTarget "Brain ScholarTests" */;
+			buildPhases = (
+				AFFC7FFF1F0D3C1700E8F6E8 /* Sources */,
+				AFFC80001F0D3C1700E8F6E8 /* Frameworks */,
+				AFFC80011F0D3C1700E8F6E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFFC80051F0D3C1700E8F6E8 /* PBXTargetDependency */,
+			);
+			name = "Brain ScholarTests";
+			productName = "Brain ScholarTests";
+			productReference = AFFC80031F0D3C1700E8F6E8 /* Brain ScholarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFFC800D1F0D3C1700E8F6E8 /* Brain ScholarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFC801D1F0D3C1700E8F6E8 /* Build configuration list for PBXNativeTarget "Brain ScholarUITests" */;
+			buildPhases = (
+				AFFC800A1F0D3C1700E8F6E8 /* Sources */,
+				AFFC800B1F0D3C1700E8F6E8 /* Frameworks */,
+				AFFC800C1F0D3C1700E8F6E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFFC80101F0D3C1700E8F6E8 /* PBXTargetDependency */,
+			);
+			name = "Brain ScholarUITests";
+			productName = "Brain ScholarUITests";
+			productReference = AFFC800E1F0D3C1700E8F6E8 /* Brain ScholarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFFC7FE71F0D3C1500E8F6E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Derek Roberts";
+				TargetAttributes = {
+					AFFC7FEE1F0D3C1600E8F6E8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4AL37FQ8WP;
+						ProvisioningStyle = Automatic;
+					};
+					AFFC80021F0D3C1700E8F6E8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4AL37FQ8WP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFFC7FEE1F0D3C1600E8F6E8;
+					};
+					AFFC800D1F0D3C1700E8F6E8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4AL37FQ8WP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFFC7FEE1F0D3C1600E8F6E8;
+					};
+				};
+			};
+			buildConfigurationList = AFFC7FEA1F0D3C1500E8F6E8 /* Build configuration list for PBXProject "Brain Scholar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFFC7FE61F0D3C1500E8F6E8;
+			productRefGroup = AFFC7FF01F0D3C1600E8F6E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFFC7FEE1F0D3C1600E8F6E8 /* Brain Scholar */,
+				AFFC80021F0D3C1700E8F6E8 /* Brain ScholarTests */,
+				AFFC800D1F0D3C1700E8F6E8 /* Brain ScholarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFFC7FED1F0D3C1600E8F6E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFC7FFD1F0D3C1600E8F6E8 /* LaunchScreen.storyboard in Resources */,
+				AFFC7FFA1F0D3C1600E8F6E8 /* Assets.xcassets in Resources */,
+				AFFC7FF81F0D3C1600E8F6E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFC80011F0D3C1700E8F6E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFC800C1F0D3C1700E8F6E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFFC7FEB1F0D3C1600E8F6E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFC7FF51F0D3C1600E8F6E8 /* ViewController.swift in Sources */,
+				AFFC7FF31F0D3C1600E8F6E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFC7FFF1F0D3C1700E8F6E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFC80081F0D3C1700E8F6E8 /* Brain_ScholarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFC800A1F0D3C1700E8F6E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFC80131F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFFC80051F0D3C1700E8F6E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFFC7FEE1F0D3C1600E8F6E8 /* Brain Scholar */;
+			targetProxy = AFFC80041F0D3C1700E8F6E8 /* PBXContainerItemProxy */;
+		};
+		AFFC80101F0D3C1700E8F6E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFFC7FEE1F0D3C1600E8F6E8 /* Brain Scholar */;
+			targetProxy = AFFC800F1F0D3C1700E8F6E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFFC7FF61F0D3C1600E8F6E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFFC7FF71F0D3C1600E8F6E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFFC7FFB1F0D3C1600E8F6E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFFC7FFC1F0D3C1600E8F6E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFFC80151F0D3C1700E8F6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFFC80161F0D3C1700E8F6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFFC80181F0D3C1700E8F6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AL37FQ8WP;
+				INFOPLIST_FILE = "Brain Scholar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.Brain-Scholar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AFFC80191F0D3C1700E8F6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AL37FQ8WP;
+				INFOPLIST_FILE = "Brain Scholar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.Brain-Scholar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AFFC801B1F0D3C1700E8F6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4AL37FQ8WP;
+				INFOPLIST_FILE = "Brain ScholarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.Brain-ScholarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brain Scholar.app/Brain Scholar";
+			};
+			name = Debug;
+		};
+		AFFC801C1F0D3C1700E8F6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4AL37FQ8WP;
+				INFOPLIST_FILE = "Brain ScholarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.Brain-ScholarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brain Scholar.app/Brain Scholar";
+			};
+			name = Release;
+		};
+		AFFC801E1F0D3C1700E8F6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4AL37FQ8WP;
+				INFOPLIST_FILE = "Brain ScholarUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.Brain-ScholarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Brain Scholar";
+			};
+			name = Debug;
+		};
+		AFFC801F1F0D3C1700E8F6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4AL37FQ8WP;
+				INFOPLIST_FILE = "Brain ScholarUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.Brain-ScholarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Brain Scholar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFFC7FEA1F0D3C1500E8F6E8 /* Build configuration list for PBXProject "Brain Scholar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFC80151F0D3C1700E8F6E8 /* Debug */,
+				AFFC80161F0D3C1700E8F6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFC80171F0D3C1700E8F6E8 /* Build configuration list for PBXNativeTarget "Brain Scholar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFC80181F0D3C1700E8F6E8 /* Debug */,
+				AFFC80191F0D3C1700E8F6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AFFC801A1F0D3C1700E8F6E8 /* Build configuration list for PBXNativeTarget "Brain ScholarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFC801B1F0D3C1700E8F6E8 /* Debug */,
+				AFFC801C1F0D3C1700E8F6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AFFC801D1F0D3C1700E8F6E8 /* Build configuration list for PBXNativeTarget "Brain ScholarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFC801E1F0D3C1700E8F6E8 /* Debug */,
+				AFFC801F1F0D3C1700E8F6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFFC7FE71F0D3C1500E8F6E8 /* Project object */;
+}
