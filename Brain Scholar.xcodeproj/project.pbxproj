@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFE6AAEC1F13B30A006B0E27 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6AAE91F13B28D006B0E27 /* Charts.framework */; };
+		AFE6AAED1F13B30A006B0E27 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6AAE91F13B28D006B0E27 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFFC7FF31F0D3C1600E8F6E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */; };
 		AFFC7FF51F0D3C1600E8F6E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */; };
 		AFFC7FF81F0D3C1600E8F6E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFC7FF61F0D3C1600E8F6E8 /* Main.storyboard */; };
@@ -14,9 +16,31 @@
 		AFFC7FFD1F0D3C1600E8F6E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFC7FFB1F0D3C1600E8F6E8 /* LaunchScreen.storyboard */; };
 		AFFC80081F0D3C1700E8F6E8 /* Brain_ScholarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80071F0D3C1700E8F6E8 /* Brain_ScholarTests.swift */; };
 		AFFC80131F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80121F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift */; };
+		AFFC80571F0D6D5B00E8F6E8 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80561F0D6D5B00E8F6E8 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AFE6AAE81F13B28D006B0E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		AFE6AAEA1F13B28D006B0E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		AFE6AAEE1F13B30A006B0E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 		AFFC80041F0D3C1700E8F6E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AFFC7FE71F0D3C1500E8F6E8 /* Project object */;
@@ -31,23 +55,34 @@
 			remoteGlobalIDString = AFFC7FEE1F0D3C1600E8F6E8;
 			remoteInfo = "Brain Scholar";
 		};
-		AFFC80251F0D5A0200E8F6E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AFFC80201F0D5A0000E8F6E8 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06165F241D8110E600722320;
-			remoteInfo = Charts;
-		};
-		AFFC80271F0D5A0200E8F6E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AFFC80201F0D5A0000E8F6E8 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06165F2E1D8110E600722320;
-			remoteInfo = ChartsTests;
-		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AFAE8C691F0EBEF6000774F7 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAE8C9C1F0EC1F1000774F7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AFE6AAED1F13B30A006B0E27 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master 2/Charts.xcodeproj"; sourceTree = "<group>"; };
 		AFFC7FEF1F0D3C1600E8F6E8 /* Brain Scholar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brain Scholar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +96,7 @@
 		AFFC800E1F0D3C1700E8F6E8 /* Brain ScholarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brain ScholarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFC80121F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain_ScholarUITests.swift; sourceTree = "<group>"; };
 		AFFC80141F0D3C1700E8F6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFFC80201F0D5A0000E8F6E8 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		AFFC80561F0D6D5B00E8F6E8 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE6AAEC1F13B30A006B0E27 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +125,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFE6AAE41F13B28D006B0E27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFE6AAE91F13B28D006B0E27 /* Charts.framework */,
+				AFE6AAEB1F13B28D006B0E27 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AFFC7FE61F0D3C1500E8F6E8 = {
 			isa = PBXGroup;
 			children = (
-				AFFC80201F0D5A0000E8F6E8 /* Charts.xcodeproj */,
+				AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */,
 				AFFC7FF11F0D3C1600E8F6E8 /* Brain Scholar */,
 				AFFC80061F0D3C1700E8F6E8 /* Brain ScholarTests */,
 				AFFC80111F0D3C1700E8F6E8 /* Brain ScholarUITests */,
@@ -115,6 +160,7 @@
 			children = (
 				AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */,
 				AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */,
+				AFFC80561F0D6D5B00E8F6E8 /* ViewController2.swift */,
 				AFFC7FF61F0D3C1600E8F6E8 /* Main.storyboard */,
 				AFFC7FF91F0D3C1600E8F6E8 /* Assets.xcassets */,
 				AFFC7FFB1F0D3C1600E8F6E8 /* LaunchScreen.storyboard */,
@@ -141,15 +187,6 @@
 			path = "Brain ScholarUITests";
 			sourceTree = "<group>";
 		};
-		AFFC80211F0D5A0000E8F6E8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AFFC80261F0D5A0200E8F6E8 /* Charts.framework */,
-				AFFC80281F0D5A0200E8F6E8 /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,10 +197,13 @@
 				AFFC7FEB1F0D3C1600E8F6E8 /* Sources */,
 				AFFC7FEC1F0D3C1600E8F6E8 /* Frameworks */,
 				AFFC7FED1F0D3C1600E8F6E8 /* Resources */,
+				AFAE8C691F0EBEF6000774F7 /* Embed PlugIns */,
+				AFAE8C9C1F0EC1F1000774F7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AFE6AAEF1F13B30A006B0E27 /* PBXTargetDependency */,
 			);
 			name = "Brain Scholar";
 			productName = "Brain Scholar";
@@ -248,8 +288,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AFFC80211F0D5A0000E8F6E8 /* Products */;
-					ProjectRef = AFFC80201F0D5A0000E8F6E8 /* Charts.xcodeproj */;
+					ProductGroup = AFE6AAE41F13B28D006B0E27 /* Products */;
+					ProjectRef = AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -262,18 +302,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AFFC80261F0D5A0200E8F6E8 /* Charts.framework */ = {
+		AFE6AAE91F13B28D006B0E27 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = AFFC80251F0D5A0200E8F6E8 /* PBXContainerItemProxy */;
+			remoteRef = AFE6AAE81F13B28D006B0E27 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AFFC80281F0D5A0200E8F6E8 /* ChartsTests.xctest */ = {
+		AFE6AAEB1F13B28D006B0E27 /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = AFFC80271F0D5A0200E8F6E8 /* PBXContainerItemProxy */;
+			remoteRef = AFE6AAEA1F13B28D006B0E27 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -312,6 +352,7 @@
 			files = (
 				AFFC7FF51F0D3C1600E8F6E8 /* ViewController.swift in Sources */,
 				AFFC7FF31F0D3C1600E8F6E8 /* AppDelegate.swift in Sources */,
+				AFFC80571F0D6D5B00E8F6E8 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +375,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AFE6AAEF1F13B30A006B0E27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = AFE6AAEE1F13B30A006B0E27 /* PBXContainerItemProxy */;
+		};
 		AFFC80051F0D3C1700E8F6E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AFFC7FEE1F0D3C1600E8F6E8 /* Brain Scholar */;
@@ -464,6 +510,7 @@
 		AFFC80181F0D3C1700E8F6E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4AL37FQ8WP;
 				INFOPLIST_FILE = "Brain Scholar/Info.plist";
@@ -477,6 +524,7 @@
 		AFFC80191F0D3C1700E8F6E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4AL37FQ8WP;
 				INFOPLIST_FILE = "Brain Scholar/Info.plist";
@@ -564,6 +612,7 @@
 				AFFC80191F0D3C1700E8F6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFFC801A1F0D3C1700E8F6E8 /* Build configuration list for PBXNativeTarget "Brain ScholarTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +621,7 @@
 				AFFC801C1F0D3C1700E8F6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFFC801D1F0D3C1700E8F6E8 /* Build configuration list for PBXNativeTarget "Brain ScholarUITests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +630,7 @@
 				AFFC801F1F0D3C1700E8F6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

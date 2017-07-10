@@ -34,6 +34,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     }
     
     @IBAction func betaValueChanged(_ sender: UISlider) {
+        betaValue.text = "\(betaSlider.value)"
     }
     
     
