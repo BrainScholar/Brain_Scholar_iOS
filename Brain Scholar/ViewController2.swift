@@ -108,15 +108,6 @@ class ViewController2: UIViewController, ChartViewDelegate {
         let stimt: Double = 3000 + 3000 * (stinum - 1)
         let intstim: Int = Int(stimt)
             
-        /*f[iteration] = v[iteration] * (1 - ((v[iteration] * v[iteration]) / 3));
-        v[iteration + 1] = 1 / C * (GNA * f[iteration] - GK * u[iteration]) * del_t + v[iteration];
-        if (i == intstim) {
-            v[iteration + 1] = v[iteration + 1] + V_STIM;
-        }
-        u[iteration + 1] = (v[iteraion] + BETA - GAMMA * u[iteration]) * del_t + u[iteration];
-            
-        let entry = ChartDataEntry(x: Double(iteration), y: v[iiteration])*/
-            
         f[iteration % 6000] = v[iteration % 6000] * (1 - ((v[iteration % 6000] * v[iteration % 6000]) / 3));
         v[(iteration + 1) % 6000] = 1 / C * (GNA * f[iteration % 6000] - GK * u[iteration % 6000]) * del_t + v[iteration % 6000];
         if (iteration == intstim) {
