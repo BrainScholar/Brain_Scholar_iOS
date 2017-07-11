@@ -70,5 +70,16 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return graphSpeeds[row]
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var DestViewController : ViewController2 = segue.destination as! ViewController2
+        
+        DestViewController.GNA = Double(gnaSlider.value)
+        DestViewController.GK = Double(gkSlider.value)
+        DestViewController.BETA = Double(betaSlider.value)
+        DestViewController.GAMMA = Double(gammaSlider.value)
+        DestViewController.V_STIM = Double(v_stimSlider.value)
+        DestViewController.C = Double(cSlider.value)
+        
+    }
 }
 

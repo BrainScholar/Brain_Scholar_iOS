@@ -11,16 +11,20 @@ import Charts
 
 class ViewController2: UIViewController, ChartViewDelegate {
 
-    var GNA : Double = 0.0
-    var GK : Double = 0.0
-    var BETA : Double = 0.0
-    var GAMMA : Double = 0.0
-    var V_STIM : Double = 0.0
-    var C : Double = 0.0
+    var GNA : Double = Double()
+    var GK : Double = Double()
+    var BETA : Double = Double()
+    var GAMMA : Double = Double()
+    var V_STIM : Double = Double()
+    var C : Double = Double()
+    
     var iteration : Double = 0.0
     var i : Int = 0
-    let v : [Double] = []
-    
+    var del_t : Double = 0.001
+    var f = Array(repeating: 0.0, count: 10000)
+    var u = Array(repeating: 0.0, count: 10000)
+    var v = Array(repeating: 0.0, count: 10000)
+    var index : Int = 0
 
     @IBOutlet weak var graphView: LineChartView!
     
@@ -70,30 +74,49 @@ class ViewController2: UIViewController, ChartViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let xValues: [Double] = []
-        let yValues: [Double] = []
-        
+        graphView.xAxis.labelPosition = .bottom
+        graphView.rightAxis.drawLabelsEnabled = false
+        graphView.animate(xAxisDuration: 2.0)
         graphView.noDataText = "Ayy bruh... It's broke..."
-        setChart(dataPoints: xValues, values: yValues)
+        graphView.descriptionText = ""
+        setChart()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func setChart(dataPoints: [Double], values: [Double]) {
+    func setChart() {
         graphView.delegate = self
-        var dataEntries: [ChartDataEntry] = []
-
-        for i in 0..<dataPoints.count {
-            //v[i] = Double(i)
-            let DataEntry = ChartDataEntry(x: dataPoints[i], y: values[i])
-            dataEntries.append(DataEntry)
+        let lineChartDataSet = LineChartDataSet()
+        
+        u[0] = -1.1;
+        v[0] = -1.2;
+        
+        for i in 0..<9998 {
+            let Floor: Double = Double(i / 3000)
+            let stinum: Double = floor(Floor)
+            let stimt: Double = 3000 + 3000 * (stinum - 1)
+            let intstim: Int = Int(stimt)
+            
+            f[i] = v[i] * (1 - ((v[i] * v[i]) / 3));
+            v[i + 1] = 1 / C * (GNA * f[i] - GK * u[i]) * del_t + v[i];
+            if (i == intstim) {
+                v[i + 1] = v[i + 1] + V_STIM;
+            }
+            u[i + 1] = (v[i] + BETA - GAMMA * u[i]) * del_t + u[i];
+            
+            let entry = ChartDataEntry(x: Double(i), y: v[i])
+            lineChartDataSet.addEntry(entry)
             iteration += 1
+            index = (index + 1) % 6000
         }
-        let lineChartDataSet = LineChartDataSet(values: dataEntries, label: nil)
+        
+        lineChartDataSet.drawCirclesEnabled = false
+        lineChartDataSet.colors = [NSUIColor .blue]
         let lineChartData = LineChartData(dataSet: lineChartDataSet)
         graphView.data = lineChartData
+        
     }
     
 
