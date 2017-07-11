@@ -10,7 +10,8 @@ import UIKit
 import Charts
 
 class ViewController2: UIViewController, ChartViewDelegate {
-
+    
+    //Variables recieve values passed by segue
     var GNA : Double = Double()
     var GK : Double = Double()
     var BETA : Double = Double()
@@ -18,13 +19,16 @@ class ViewController2: UIViewController, ChartViewDelegate {
     var V_STIM : Double = Double()
     var C : Double = Double()
     
-    var iteration : Double = 0.0
+    var timer : Timer?
+    
+    var iteration : Int = 0
     var i : Int = 0
     var del_t : Double = 0.001
     var f = Array(repeating: 0.0, count: 10000)
     var u = Array(repeating: 0.0, count: 10000)
     var v = Array(repeating: 0.0, count: 10000)
-    var index : Int = 0
+    var lineChartDataSet = LineChartDataSet()
+    var lineChartData = LineChartData()
 
     @IBOutlet weak var graphView: LineChartView!
     
@@ -74,48 +78,68 @@ class ViewController2: UIViewController, ChartViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.graphView.delegate = self
         graphView.xAxis.labelPosition = .bottom
         graphView.rightAxis.drawLabelsEnabled = false
-        graphView.animate(xAxisDuration: 2.0)
+        //graphView.animate(xAxisDuration: 2.0)
         graphView.noDataText = "Ayy bruh... It's broke..."
         graphView.descriptionText = ""
-        setChart()
+        
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.0000001, target: self, selector: #selector(setChart), userInfo: nil, repeats: true)
+        /*for i in 0..<1000 {
+            setChart()
+        }*/
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func setChart() {
         graphView.delegate = self
-        let lineChartDataSet = LineChartDataSet()
-        
         u[0] = -1.1;
         v[0] = -1.2;
         
-        for i in 0..<9998 {
-            let Floor: Double = Double(i / 3000)
-            let stinum: Double = floor(Floor)
-            let stimt: Double = 3000 + 3000 * (stinum - 1)
-            let intstim: Int = Int(stimt)
+        let Floor: Double = Double(i / 3000)
+        let stinum: Double = floor(Floor)
+        let stimt: Double = 3000 + 3000 * (stinum - 1)
+        let intstim: Int = Int(stimt)
             
-            f[i] = v[i] * (1 - ((v[i] * v[i]) / 3));
-            v[i + 1] = 1 / C * (GNA * f[i] - GK * u[i]) * del_t + v[i];
-            if (i == intstim) {
-                v[i + 1] = v[i + 1] + V_STIM;
-            }
-            u[i + 1] = (v[i] + BETA - GAMMA * u[i]) * del_t + u[i];
+        /*f[iteration] = v[iteration] * (1 - ((v[iteration] * v[iteration]) / 3));
+        v[iteration + 1] = 1 / C * (GNA * f[iteration] - GK * u[iteration]) * del_t + v[iteration];
+        if (i == intstim) {
+            v[iteration + 1] = v[iteration + 1] + V_STIM;
+        }
+        u[iteration + 1] = (v[iteraion] + BETA - GAMMA * u[iteration]) * del_t + u[iteration];
             
-            let entry = ChartDataEntry(x: Double(i), y: v[i])
+        let entry = ChartDataEntry(x: Double(iteration), y: v[iiteration])*/
+            
+        f[iteration % 6000] = v[iteration % 6000] * (1 - ((v[iteration % 6000] * v[iteration % 6000]) / 3));
+        v[(iteration + 1) % 6000] = 1 / C * (GNA * f[iteration % 6000] - GK * u[iteration % 6000]) * del_t + v[iteration % 6000];
+        if (iteration == intstim) {
+            v[(iteration + 1) % 6000] = v[(iteration + 1) % 6000] + V_STIM;
+        }
+        u[(iteration + 1)%6000] = (v[iteration%6000] + BETA - GAMMA * u[iteration%6000]) * del_t + u[iteration % 6000];
+            
+        if(iteration % 25 == 0) {
+            let entry = ChartDataEntry(x: Double(iteration), y: v[iteration % 6000])
             lineChartDataSet.addEntry(entry)
-            iteration += 1
-            index = (index + 1) % 6000
+        
+            if (iteration >= 10001) {
+                lineChartDataSet.removeFirst()
+            }
         }
         
+        graphView.setVisibleXRange(minXRange: Double(0), maxXRange: Double(10000))
+        graphView.notifyDataSetChanged()
+        graphView.moveViewToX(Double(i))
+        iteration += 1
         lineChartDataSet.drawCirclesEnabled = false
-        lineChartDataSet.colors = [NSUIColor .blue]
-        let lineChartData = LineChartData(dataSet: lineChartDataSet)
-        graphView.data = lineChartData
+        lineChartDataSet.setColor(NSUIColor .blue)
+        graphView.data = LineChartData(dataSet: lineChartDataSet)
         
     }
     
