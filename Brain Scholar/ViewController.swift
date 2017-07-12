@@ -10,7 +10,16 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate {
 
+    //***************DECLARE VARIABLE**********************
+    //This string array is used later to populate the spinner.
     var graphSpeeds = ["Very Fast", "Fast", "Moderate", "Slow", "Very Slow"]
+    //*****************************************************
+    
+    //*********************OUTLETS**************************
+    //These outlets are elements from the view passed to this controller.
+    //Here, they are initialized as variables.
+    
+    //Value Labels (Directly above sliders).
     @IBOutlet weak var gnaValue: UILabel!
     @IBOutlet weak var gkValue: UILabel!
     @IBOutlet weak var betaValue: UILabel!
@@ -18,12 +27,17 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet weak var v_stimValue: UILabel!
     @IBOutlet weak var cValue: UILabel!
     
+    //Sliders
     @IBOutlet weak var gnaSlider: UISlider!
     @IBOutlet weak var gkSlider: UISlider!
     @IBOutlet weak var betaSlider: UISlider!
     @IBOutlet weak var gammaSlider: UISlider!
     @IBOutlet weak var v_stimSlider: UISlider!
     @IBOutlet weak var cSlider: UISlider!
+    //******************************************************
+    
+    //********************SLIDER ACTION*********************
+    //Here, we change the text of the label above each slider to match the value of each slider.
     
     @IBAction func gnaValueChanged(_ sender: UISlider) {
         gnaValue.text = "\(gnaSlider.value)"
@@ -37,7 +51,6 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         betaValue.text = "\(betaSlider.value)"
     }
     
-    
     @IBAction func gammaValueChanged(_ sender: UISlider) {
         gammaValue.text = "\(gammaSlider.value)"
     }
@@ -49,6 +62,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     @IBAction func cValueChanged(_ sender: UISlider) {
         cValue.text = "\(cSlider.value)"
     }
+    //*****************************************************
     
     
     override func viewDidLoad() {
@@ -60,19 +74,29 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    //*********************SPINNER************************
     func numberOfComponentsInPickerView(pickerView: UIPickerView!) -> Int{
         return 1
     }
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        //Set the amount of rows equal to the amount of object in our "graphSpeeds" array.
         return graphSpeeds.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        //Set the title of each row = the string value in the corresponding index.
+        //Acts like a for loop population.
         return graphSpeeds[row]
     }
+    //****************************************************
+    
+    
+    //************************SEGUE***********************
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Here we determine where we send our values to.
         var DestViewController : ViewController2 = segue.destination as! ViewController2
         
+        //Here we assign values in this view controller directly to variables in our destination view controller.
         DestViewController.GNA = Double(gnaSlider.value)
         DestViewController.GK = Double(gkSlider.value)
         DestViewController.BETA = Double(betaSlider.value)
@@ -81,5 +105,6 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         DestViewController.C = Double(cSlider.value)
         
     }
+    //****************************************************
 }
 
