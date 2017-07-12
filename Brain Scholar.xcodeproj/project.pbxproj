@@ -7,39 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFE6AAEC1F13B30A006B0E27 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6AAE91F13B28D006B0E27 /* Charts.framework */; };
-		AFE6AAED1F13B30A006B0E27 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6AAE91F13B28D006B0E27 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF5CEA2B1F16A1200068C022 /* BrainScholarAppIcon(xxxhdpi) copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5CEA2A1F16A1200068C022 /* BrainScholarAppIcon(xxxhdpi) copy.png */; };
+		AF5CEA361F16A5BC0068C022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5CEA351F16A5BC0068C022 /* LaunchScreen.storyboard */; };
 		AFFC7FF31F0D3C1600E8F6E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */; };
 		AFFC7FF51F0D3C1600E8F6E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */; };
 		AFFC7FF81F0D3C1600E8F6E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFC7FF61F0D3C1600E8F6E8 /* Main.storyboard */; };
 		AFFC7FFA1F0D3C1600E8F6E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFC7FF91F0D3C1600E8F6E8 /* Assets.xcassets */; };
-		AFFC7FFD1F0D3C1600E8F6E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFC7FFB1F0D3C1600E8F6E8 /* LaunchScreen.storyboard */; };
 		AFFC80081F0D3C1700E8F6E8 /* Brain_ScholarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80071F0D3C1700E8F6E8 /* Brain_ScholarTests.swift */; };
 		AFFC80131F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80121F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift */; };
 		AFFC80571F0D6D5B00E8F6E8 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80561F0D6D5B00E8F6E8 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AFE6AAE81F13B28D006B0E27 /* PBXContainerItemProxy */ = {
+		AF5CEA311F16A3310068C022 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */;
+			containerPortal = AF5CEA2C1F16A3310068C022 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F241D8110E600722320;
 			remoteInfo = Charts;
 		};
-		AFE6AAEA1F13B28D006B0E27 /* PBXContainerItemProxy */ = {
+		AF5CEA331F16A3310068C022 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */;
+			containerPortal = AF5CEA2C1F16A3310068C022 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
-		};
-		AFE6AAEE1F13B30A006B0E27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 06165F231D8110E600722320;
-			remoteInfo = Charts;
 		};
 		AFFC80041F0D3C1700E8F6E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -74,7 +66,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AFE6AAED1F13B30A006B0E27 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,13 +73,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master 2/Charts.xcodeproj"; sourceTree = "<group>"; };
+		AF5CEA2A1F16A1200068C022 /* BrainScholarAppIcon(xxxhdpi) copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BrainScholarAppIcon(xxxhdpi) copy.png"; path = "../../../Pictures/Primo Shoops/BrainScholarAppIcon(xxxhdpi) copy.png"; sourceTree = "<group>"; };
+		AF5CEA2C1F16A3310068C022 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Charts.xcodeproj; sourceTree = "<group>"; };
+		AF5CEA351F16A5BC0068C022 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFFC7FEF1F0D3C1600E8F6E8 /* Brain Scholar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brain Scholar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFFC7FF71F0D3C1600E8F6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFFC7FF91F0D3C1600E8F6E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AFFC7FFC1F0D3C1600E8F6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFFC7FFE1F0D3C1600E8F6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFFC80031F0D3C1700E8F6E8 /* Brain ScholarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brain ScholarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFC80071F0D3C1700E8F6E8 /* Brain_ScholarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain_ScholarTests.swift; sourceTree = "<group>"; };
@@ -104,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE6AAEC1F13B30A006B0E27 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,11 +116,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AFE6AAE41F13B28D006B0E27 /* Products */ = {
+		AF5CEA2D1F16A3310068C022 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFE6AAE91F13B28D006B0E27 /* Charts.framework */,
-				AFE6AAEB1F13B28D006B0E27 /* ChartsTests.xctest */,
+				AF5CEA321F16A3310068C022 /* Charts.framework */,
+				AF5CEA341F16A3310068C022 /* ChartsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,7 +128,8 @@
 		AFFC7FE61F0D3C1500E8F6E8 = {
 			isa = PBXGroup;
 			children = (
-				AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */,
+				AF5CEA2C1F16A3310068C022 /* Charts.xcodeproj */,
+				AF5CEA2A1F16A1200068C022 /* BrainScholarAppIcon(xxxhdpi) copy.png */,
 				AFFC7FF11F0D3C1600E8F6E8 /* Brain Scholar */,
 				AFFC80061F0D3C1700E8F6E8 /* Brain ScholarTests */,
 				AFFC80111F0D3C1700E8F6E8 /* Brain ScholarUITests */,
@@ -163,8 +155,8 @@
 				AFFC80561F0D6D5B00E8F6E8 /* ViewController2.swift */,
 				AFFC7FF61F0D3C1600E8F6E8 /* Main.storyboard */,
 				AFFC7FF91F0D3C1600E8F6E8 /* Assets.xcassets */,
-				AFFC7FFB1F0D3C1600E8F6E8 /* LaunchScreen.storyboard */,
 				AFFC7FFE1F0D3C1600E8F6E8 /* Info.plist */,
+				AF5CEA351F16A5BC0068C022 /* LaunchScreen.storyboard */,
 			);
 			path = "Brain Scholar";
 			sourceTree = "<group>";
@@ -203,7 +195,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				AFE6AAEF1F13B30A006B0E27 /* PBXTargetDependency */,
 			);
 			name = "Brain Scholar";
 			productName = "Brain Scholar";
@@ -288,8 +279,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AFE6AAE41F13B28D006B0E27 /* Products */;
-					ProjectRef = AFE6AAE31F13B28D006B0E27 /* Charts.xcodeproj */;
+					ProductGroup = AF5CEA2D1F16A3310068C022 /* Products */;
+					ProjectRef = AF5CEA2C1F16A3310068C022 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -302,18 +293,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AFE6AAE91F13B28D006B0E27 /* Charts.framework */ = {
+		AF5CEA321F16A3310068C022 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = AFE6AAE81F13B28D006B0E27 /* PBXContainerItemProxy */;
+			remoteRef = AF5CEA311F16A3310068C022 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AFE6AAEB1F13B28D006B0E27 /* ChartsTests.xctest */ = {
+		AF5CEA341F16A3310068C022 /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = AFE6AAEA1F13B28D006B0E27 /* PBXContainerItemProxy */;
+			remoteRef = AF5CEA331F16A3310068C022 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -323,9 +314,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFFC7FFD1F0D3C1600E8F6E8 /* LaunchScreen.storyboard in Resources */,
 				AFFC7FFA1F0D3C1600E8F6E8 /* Assets.xcassets in Resources */,
+				AF5CEA361F16A5BC0068C022 /* LaunchScreen.storyboard in Resources */,
 				AFFC7FF81F0D3C1600E8F6E8 /* Main.storyboard in Resources */,
+				AF5CEA2B1F16A1200068C022 /* BrainScholarAppIcon(xxxhdpi) copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,11 +367,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AFE6AAEF1F13B30A006B0E27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = AFE6AAEE1F13B30A006B0E27 /* PBXContainerItemProxy */;
-		};
 		AFFC80051F0D3C1700E8F6E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AFFC7FEE1F0D3C1600E8F6E8 /* Brain Scholar */;
@@ -399,14 +386,6 @@
 				AFFC7FF71F0D3C1600E8F6E8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AFFC7FFB1F0D3C1600E8F6E8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AFFC7FFC1F0D3C1600E8F6E8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
