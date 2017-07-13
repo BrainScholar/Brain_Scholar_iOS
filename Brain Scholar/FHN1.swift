@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDelegate {
+class FHN1: UIViewController, UIPickerViewDelegate {
 
     //***************DECLARE VARIABLE**********************
     //This string array is used later to populate the spinner.
@@ -34,6 +34,9 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet weak var gammaSlider: UISlider!
     @IBOutlet weak var v_stimSlider: UISlider!
     @IBOutlet weak var cSlider: UISlider!
+    
+    //Calc Button
+    @IBOutlet var calcButton: UIButton!
     //******************************************************
     
     //********************SLIDER ACTION*********************
@@ -93,16 +96,18 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     
     //************************SEGUE***********************
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //Here we determine where we send our values to.
-        var DestViewController : ViewController2 = segue.destination as! ViewController2
+        if(segue.identifier == "calcButtonSegue") {
+            //Here we determine where we send our values to.
+            var DestViewController : FHN2 = segue.destination as! FHN2
         
-        //Here we assign values in this view controller directly to variables in our destination view controller.
-        DestViewController.GNA = Double(gnaSlider.value)
-        DestViewController.GK = Double(gkSlider.value)
-        DestViewController.BETA = Double(betaSlider.value)
-        DestViewController.GAMMA = Double(gammaSlider.value)
-        DestViewController.V_STIM = Double(v_stimSlider.value)
-        DestViewController.C = Double(cSlider.value)
+            //Here we assign values in this view controller directly to variables in our destination view controller.
+            DestViewController.GNA = Double(gnaSlider.value)
+            DestViewController.GK = Double(gkSlider.value)
+            DestViewController.BETA = Double(betaSlider.value)
+            DestViewController.GAMMA = Double(gammaSlider.value)
+            DestViewController.V_STIM = Double(v_stimSlider.value)
+            DestViewController.C = Double(cSlider.value)
+        }
         
     }
     //****************************************************

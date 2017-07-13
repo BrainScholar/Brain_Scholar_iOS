@@ -10,14 +10,18 @@
 		AF1F04CB1F17B3F900249A24 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1F04C81F17B3F100249A24 /* Charts.framework */; };
 		AF1F04CC1F17B3F900249A24 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF1F04C81F17B3F100249A24 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF1F04D01F17B55800249A24 /* BrainScholarAppIcon(xxxhdpi) copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AF1F04CF1F17B55800249A24 /* BrainScholarAppIcon(xxxhdpi) copy.png */; };
+		AF1F04D41F17BB4900249A24 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F04D31F17BB4900249A24 /* MainMenu.swift */; };
+		AF1F04D61F17C1F900249A24 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F04D51F17C1F900249A24 /* TutorialPageViewController.swift */; };
+		AF1F04D81F17D0F100249A24 /* FHNTut1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F04D71F17D0F100249A24 /* FHNTut1.swift */; };
+		AF1F04DA1F17D11300249A24 /* FHNTut2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F04D91F17D11300249A24 /* FHNTut2.swift */; };
 		AF5CEA361F16A5BC0068C022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5CEA351F16A5BC0068C022 /* LaunchScreen.storyboard */; };
 		AFFC7FF31F0D3C1600E8F6E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */; };
-		AFFC7FF51F0D3C1600E8F6E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */; };
+		AFFC7FF51F0D3C1600E8F6E8 /* FHN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF41F0D3C1600E8F6E8 /* FHN1.swift */; };
 		AFFC7FF81F0D3C1600E8F6E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFC7FF61F0D3C1600E8F6E8 /* Main.storyboard */; };
 		AFFC7FFA1F0D3C1600E8F6E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFC7FF91F0D3C1600E8F6E8 /* Assets.xcassets */; };
 		AFFC80081F0D3C1700E8F6E8 /* Brain_ScholarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80071F0D3C1700E8F6E8 /* Brain_ScholarTests.swift */; };
 		AFFC80131F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80121F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift */; };
-		AFFC80571F0D6D5B00E8F6E8 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80561F0D6D5B00E8F6E8 /* ViewController2.swift */; };
+		AFFC80571F0D6D5B00E8F6E8 /* FHN2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC80561F0D6D5B00E8F6E8 /* FHN2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,10 +89,14 @@
 /* Begin PBXFileReference section */
 		AF1F04C21F17B3F100249A24 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		AF1F04CF1F17B55800249A24 /* BrainScholarAppIcon(xxxhdpi) copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BrainScholarAppIcon(xxxhdpi) copy.png"; sourceTree = "<group>"; };
+		AF1F04D31F17BB4900249A24 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		AF1F04D51F17C1F900249A24 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		AF1F04D71F17D0F100249A24 /* FHNTut1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FHNTut1.swift; sourceTree = "<group>"; };
+		AF1F04D91F17D11300249A24 /* FHNTut2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FHNTut2.swift; sourceTree = "<group>"; };
 		AF5CEA351F16A5BC0068C022 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFFC7FEF1F0D3C1600E8F6E8 /* Brain Scholar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brain Scholar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFFC7FF41F0D3C1600E8F6E8 /* FHN1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FHN1.swift; sourceTree = "<group>"; };
 		AFFC7FF71F0D3C1600E8F6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFFC7FF91F0D3C1600E8F6E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFFC7FFE1F0D3C1600E8F6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,7 +106,7 @@
 		AFFC800E1F0D3C1700E8F6E8 /* Brain ScholarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brain ScholarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFC80121F0D3C1700E8F6E8 /* Brain_ScholarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain_ScholarUITests.swift; sourceTree = "<group>"; };
 		AFFC80141F0D3C1700E8F6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFFC80561F0D6D5B00E8F6E8 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		AFFC80561F0D6D5B00E8F6E8 /* FHN2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FHN2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +170,12 @@
 			isa = PBXGroup;
 			children = (
 				AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */,
-				AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */,
-				AFFC80561F0D6D5B00E8F6E8 /* ViewController2.swift */,
+				AF1F04D31F17BB4900249A24 /* MainMenu.swift */,
+				AF1F04D51F17C1F900249A24 /* TutorialPageViewController.swift */,
+				AF1F04D71F17D0F100249A24 /* FHNTut1.swift */,
+				AF1F04D91F17D11300249A24 /* FHNTut2.swift */,
+				AFFC7FF41F0D3C1600E8F6E8 /* FHN1.swift */,
+				AFFC80561F0D6D5B00E8F6E8 /* FHN2.swift */,
 				AFFC7FF61F0D3C1600E8F6E8 /* Main.storyboard */,
 				AFFC7FF91F0D3C1600E8F6E8 /* Assets.xcassets */,
 				AFFC7FFE1F0D3C1600E8F6E8 /* Info.plist */,
@@ -354,9 +366,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFFC7FF51F0D3C1600E8F6E8 /* ViewController.swift in Sources */,
+				AFFC7FF51F0D3C1600E8F6E8 /* FHN1.swift in Sources */,
+				AF1F04D61F17C1F900249A24 /* TutorialPageViewController.swift in Sources */,
 				AFFC7FF31F0D3C1600E8F6E8 /* AppDelegate.swift in Sources */,
-				AFFC80571F0D6D5B00E8F6E8 /* ViewController2.swift in Sources */,
+				AFFC80571F0D6D5B00E8F6E8 /* FHN2.swift in Sources */,
+				AF1F04D81F17D0F100249A24 /* FHNTut1.swift in Sources */,
+				AF1F04DA1F17D11300249A24 /* FHNTut2.swift in Sources */,
+				AF1F04D41F17BB4900249A24 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

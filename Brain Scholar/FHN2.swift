@@ -9,7 +9,7 @@
 import UIKit
 import Charts
 
-class ViewController2: UIViewController, ChartViewDelegate {
+class FHN2: UIViewController, ChartViewDelegate {
     
     //***********VARIABLE DECLARATION***************
     //Declare these variables here so that they are accessible within all inner methods and classes.
