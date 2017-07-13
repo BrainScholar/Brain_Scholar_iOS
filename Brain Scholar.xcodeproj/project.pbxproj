@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF5CEA2B1F16A1200068C022 /* BrainScholarAppIcon(xxxhdpi) copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5CEA2A1F16A1200068C022 /* BrainScholarAppIcon(xxxhdpi) copy.png */; };
+		AF1F04CB1F17B3F900249A24 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1F04C81F17B3F100249A24 /* Charts.framework */; };
+		AF1F04CC1F17B3F900249A24 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF1F04C81F17B3F100249A24 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF1F04D01F17B55800249A24 /* BrainScholarAppIcon(xxxhdpi) copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AF1F04CF1F17B55800249A24 /* BrainScholarAppIcon(xxxhdpi) copy.png */; };
 		AF5CEA361F16A5BC0068C022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5CEA351F16A5BC0068C022 /* LaunchScreen.storyboard */; };
 		AFFC7FF31F0D3C1600E8F6E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */; };
 		AFFC7FF51F0D3C1600E8F6E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7FF41F0D3C1600E8F6E8 /* ViewController.swift */; };
@@ -19,19 +21,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AF5CEA311F16A3310068C022 /* PBXContainerItemProxy */ = {
+		AF1F04C71F17B3F100249A24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AF5CEA2C1F16A3310068C022 /* Charts.xcodeproj */;
+			containerPortal = AF1F04C21F17B3F100249A24 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F241D8110E600722320;
 			remoteInfo = Charts;
 		};
-		AF5CEA331F16A3310068C022 /* PBXContainerItemProxy */ = {
+		AF1F04C91F17B3F100249A24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AF5CEA2C1F16A3310068C022 /* Charts.xcodeproj */;
+			containerPortal = AF1F04C21F17B3F100249A24 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
+		};
+		AF1F04CD1F17B3F900249A24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF1F04C21F17B3F100249A24 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
 		};
 		AFFC80041F0D3C1700E8F6E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -66,6 +75,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AF1F04CC1F17B3F900249A24 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,8 +83,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AF5CEA2A1F16A1200068C022 /* BrainScholarAppIcon(xxxhdpi) copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BrainScholarAppIcon(xxxhdpi) copy.png"; path = "../../../Pictures/Primo Shoops/BrainScholarAppIcon(xxxhdpi) copy.png"; sourceTree = "<group>"; };
-		AF5CEA2C1F16A3310068C022 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Charts.xcodeproj; sourceTree = "<group>"; };
+		AF1F04C21F17B3F100249A24 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		AF1F04CF1F17B55800249A24 /* BrainScholarAppIcon(xxxhdpi) copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BrainScholarAppIcon(xxxhdpi) copy.png"; sourceTree = "<group>"; };
 		AF5CEA351F16A5BC0068C022 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFFC7FEF1F0D3C1600E8F6E8 /* Brain Scholar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brain Scholar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFC7FF21F0D3C1600E8F6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1F04CB1F17B3F900249A24 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,11 +127,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AF5CEA2D1F16A3310068C022 /* Products */ = {
+		AF1F04C31F17B3F100249A24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF5CEA321F16A3310068C022 /* Charts.framework */,
-				AF5CEA341F16A3310068C022 /* ChartsTests.xctest */,
+				AF1F04C81F17B3F100249A24 /* Charts.framework */,
+				AF1F04CA1F17B3F100249A24 /* ChartsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,8 +139,8 @@
 		AFFC7FE61F0D3C1500E8F6E8 = {
 			isa = PBXGroup;
 			children = (
-				AF5CEA2C1F16A3310068C022 /* Charts.xcodeproj */,
-				AF5CEA2A1F16A1200068C022 /* BrainScholarAppIcon(xxxhdpi) copy.png */,
+				AF1F04CF1F17B55800249A24 /* BrainScholarAppIcon(xxxhdpi) copy.png */,
+				AF1F04C21F17B3F100249A24 /* Charts.xcodeproj */,
 				AFFC7FF11F0D3C1600E8F6E8 /* Brain Scholar */,
 				AFFC80061F0D3C1700E8F6E8 /* Brain ScholarTests */,
 				AFFC80111F0D3C1700E8F6E8 /* Brain ScholarUITests */,
@@ -195,6 +206,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AF1F04CE1F17B3F900249A24 /* PBXTargetDependency */,
 			);
 			name = "Brain Scholar";
 			productName = "Brain Scholar";
@@ -279,8 +291,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AF5CEA2D1F16A3310068C022 /* Products */;
-					ProjectRef = AF5CEA2C1F16A3310068C022 /* Charts.xcodeproj */;
+					ProductGroup = AF1F04C31F17B3F100249A24 /* Products */;
+					ProjectRef = AF1F04C21F17B3F100249A24 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -293,18 +305,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AF5CEA321F16A3310068C022 /* Charts.framework */ = {
+		AF1F04C81F17B3F100249A24 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = AF5CEA311F16A3310068C022 /* PBXContainerItemProxy */;
+			remoteRef = AF1F04C71F17B3F100249A24 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AF5CEA341F16A3310068C022 /* ChartsTests.xctest */ = {
+		AF1F04CA1F17B3F100249A24 /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = AF5CEA331F16A3310068C022 /* PBXContainerItemProxy */;
+			remoteRef = AF1F04C91F17B3F100249A24 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -317,7 +329,7 @@
 				AFFC7FFA1F0D3C1600E8F6E8 /* Assets.xcassets in Resources */,
 				AF5CEA361F16A5BC0068C022 /* LaunchScreen.storyboard in Resources */,
 				AFFC7FF81F0D3C1600E8F6E8 /* Main.storyboard in Resources */,
-				AF5CEA2B1F16A1200068C022 /* BrainScholarAppIcon(xxxhdpi) copy.png in Resources */,
+				AF1F04D01F17B55800249A24 /* BrainScholarAppIcon(xxxhdpi) copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +379,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AF1F04CE1F17B3F900249A24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = AF1F04CD1F17B3F900249A24 /* PBXContainerItemProxy */;
+		};
 		AFFC80051F0D3C1700E8F6E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AFFC7FEE1F0D3C1600E8F6E8 /* Brain Scholar */;
