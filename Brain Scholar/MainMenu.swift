@@ -10,9 +10,9 @@ import UIKit
 
 class MainMenu: UIViewController, UIPickerViewDelegate {
 
-    var modules : [String] = ["FitzHugh-Nagumo"]
+    var modules = ["FitzHugh-Nagumo", "Some Other Module", "Some Other Module", "Some Other Module"]
     
-    
+
     @IBOutlet var modulePicker: UIPickerView!
     @IBOutlet var startButton: UIButton!
     
