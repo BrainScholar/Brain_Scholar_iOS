@@ -160,7 +160,7 @@ class FHN2: UIViewController, ChartViewDelegate {
             let currentMax = 2.2
             let minScaled = -90.0
             let maxScaled = 10.0
-            let scaledValue = (maxScaled-minScaled)*(v[iteration]-currentMin)/(currentMax-currentMin)+minScaled
+            let scaledValue = (maxScaled-minScaled)*(v[iteration%6000]-currentMin)/(currentMax-currentMin)+minScaled
             let entry = ChartDataEntry(x: Double(iteration), y: scaledValue)
             lineChartDataSet.addEntry(entry)
         
