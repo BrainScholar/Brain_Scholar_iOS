@@ -156,7 +156,12 @@ class FHN2: UIViewController, ChartViewDelegate {
         
         //For optimization, we use modulo to grap every 25th point to save the CPU from working too hard.
         if(iteration % 25 == 0) {
-            let entry = ChartDataEntry(x: Double(iteration), y: v[iteration % 6000])
+            let currentMin = -2.2
+            let currentMax = 2.2
+            let minScaled = -90.0
+            let maxScaled = 10.0
+            let scaledValue = (maxScaled-minScaled)*(v[iteration]-currentMin)/(currentMax-currentMin)+minScaled
+            let entry = ChartDataEntry(x: Double(iteration), y: scaledValue)
             lineChartDataSet.addEntry(entry)
         
             if (Double(iteration) >= 10001) {
