@@ -10,11 +10,6 @@ import UIKit
 
 class FHN1: UIViewController, UIPickerViewDelegate {
 
-    //***************DECLARE VARIABLE**********************
-    //This string array is used later to populate the spinner.
-    var graphSpeeds = ["Very Fast", "Fast", "Moderate", "Slow", "Very Slow"]
-    //*****************************************************
-    
     //*********************OUTLETS**************************
     //These outlets are elements from the view passed to this controller.
     //Here, they are initialized as variables.
@@ -78,22 +73,7 @@ class FHN1: UIViewController, UIPickerViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    //*********************SPINNER************************
-    func numberOfComponentsInPickerView(pickerView: UIPickerView!) -> Int{
-        return 1
-    }
-    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        //Set the amount of rows equal to the amount of object in our "graphSpeeds" array.
-        return graphSpeeds.count
-    }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        //Set the title of each row = the string value in the corresponding index.
-        //Acts like a for loop population.
-        return graphSpeeds[row]
-    }
-    //****************************************************
-    
-    
+   
     //************************SEGUE***********************
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "calcButtonSegue") {

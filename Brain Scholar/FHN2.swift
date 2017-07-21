@@ -154,8 +154,9 @@ class FHN2: UIViewController, ChartViewDelegate {
         u[(iteration + 1)%6000] = (v[iteration%6000] + BETA - GAMMA * u[iteration%6000]) * del_t + u[iteration % 6000];
         
         
-        //For optimization, we use modulo to grap every 25th point to save the CPU from working too hard.
+        //For optimization, we use modulo to graph every 25th point to save the CPU from working too hard.
         if(iteration % 25 == 0) {
+            //In here, we are adjusting the scale to reflect more realistic maximums (+10) and minimums (-90)
             let currentMin = -2.2
             let currentMax = 2.2
             let minScaled = -90.0
