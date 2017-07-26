@@ -21,6 +21,7 @@ class FHN1: UIViewController, UIPickerViewDelegate {
     @IBOutlet weak var gammaValue: UILabel!
     @IBOutlet weak var v_stimValue: UILabel!
     @IBOutlet weak var cValue: UILabel!
+    @IBOutlet weak var stimRateValue: UILabel!
     
     //Sliders
     @IBOutlet weak var gnaSlider: UISlider!
@@ -29,6 +30,8 @@ class FHN1: UIViewController, UIPickerViewDelegate {
     @IBOutlet weak var gammaSlider: UISlider!
     @IBOutlet weak var v_stimSlider: UISlider!
     @IBOutlet weak var cSlider: UISlider!
+    @IBOutlet weak var stimRateSlider: UISlider!
+    
     
     //Calc Button
     @IBOutlet var calcButton: UIButton!
@@ -60,6 +63,10 @@ class FHN1: UIViewController, UIPickerViewDelegate {
     @IBAction func cValueChanged(_ sender: UISlider) {
         cValue.text = "\(cSlider.value)"
     }
+    
+    @IBAction func stimRateValueChanged(_ sender: UISlider) {
+        stimRateValue.text = "\(stimRateSlider.value)"
+    }
     //*****************************************************
     
     
@@ -87,6 +94,7 @@ class FHN1: UIViewController, UIPickerViewDelegate {
             DestViewController.GAMMA = Double(gammaSlider.value)
             DestViewController.V_STIM = Double(v_stimSlider.value)
             DestViewController.C = Double(cSlider.value)
+            DestViewController.STIMRATE = Int(stimRateSlider.value*1000)
         }
         
     }

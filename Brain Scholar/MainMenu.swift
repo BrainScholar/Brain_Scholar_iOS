@@ -39,7 +39,7 @@ class MainMenu: UIViewController, UIPickerViewDelegate {
         return 1
     }
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        //Set the amount of rows equal to the amount of object in our "modules" array.
+        //Set the amount of rows equal to the amount of objects in our "modules" array.
         return modules.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

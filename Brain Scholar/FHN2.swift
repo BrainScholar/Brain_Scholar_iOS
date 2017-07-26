@@ -20,6 +20,7 @@ class FHN2: UIViewController, ChartViewDelegate {
     var GAMMA : Double = Double()
     var V_STIM : Double = Double()
     var C : Double = Double()
+    var STIMRATE : Int = Int()
     var timer : Timer?
     var iteration : Int = 0
     var del_t : Double = 0.001
@@ -46,6 +47,9 @@ class FHN2: UIViewController, ChartViewDelegate {
     @IBOutlet var gammaValue: UILabel!
     @IBOutlet var v_stimValue: UILabel!
     @IBOutlet var cValue: UILabel!
+    @IBOutlet var stimRateValue: UILabel!
+
+    
     
     //Sliders
     @IBOutlet var gnaSlider: UISlider!
@@ -54,6 +58,8 @@ class FHN2: UIViewController, ChartViewDelegate {
     @IBOutlet var gammaSlider: UISlider!
     @IBOutlet var v_stimSlider: UISlider!
     @IBOutlet var cSlider: UISlider!
+    @IBOutlet var stimRateSlider: UISlider!
+
     //***********************************************
     
     
@@ -78,6 +84,10 @@ class FHN2: UIViewController, ChartViewDelegate {
     @IBAction func cValueChanged(_ sender: UISlider) {
         cValue.text = "\(cSlider.value)"
     }
+    @IBAction func stimRateValueChanged(_ sender: UISlider) {
+        stimRateValue.text = "\(stimRateSlider.value)"
+    }
+
     
     //Here, we pass the values of all the sliders to the variables above when the user taps the "Calculate" button.
     //This overrides their current value passed from the other view
@@ -88,6 +98,7 @@ class FHN2: UIViewController, ChartViewDelegate {
         GAMMA = Double(gammaSlider.value)
         V_STIM = Double(v_stimSlider.value)
         C = Double(cSlider.value)
+        STIMRATE = Int(stimRateSlider.value*1000)
     }
     //***********************************************
     
@@ -110,10 +121,13 @@ class FHN2: UIViewController, ChartViewDelegate {
         //Error message
         graphView.noDataText = "Ayy bruh... It's broke..."
         graphView.descriptionText = ""
+        
        
         //Set the max boundaries and move based on x values
         graphView.notifyDataSetChanged()
+        graphView.setVisibleXRangeMinimum(Double(0))
         graphView.setVisibleXRangeMaximum(Double(10000))
+        graphView.setScaleEnabled(false)
         graphView.moveViewToX(Double(0))
         
         //Color the line
@@ -123,6 +137,7 @@ class FHN2: UIViewController, ChartViewDelegate {
         lineChartDataSet.drawCirclesEnabled = false
         lineChartDataSet.drawIconsEnabled = false
         lineChartDataSet.drawValuesEnabled = false
+        
         
         //Timer = (Time between plotting points (graph speed), target = superclass, select setChart method from below to plot a point, Don't need userInfo, repeat it forever and ever, Amen)
         timer = Timer.scheduledTimer(timeInterval: 0.0000001, target: self, selector: #selector(setChart), userInfo: nil, repeats: true)
@@ -148,7 +163,7 @@ class FHN2: UIViewController, ChartViewDelegate {
             
         f[iteration % 6000] = v[iteration % 6000] * (1 - ((v[iteration % 6000] * v[iteration % 6000]) / 3));
         v[(iteration + 1) % 6000] = 1 / C * (GNA * f[iteration % 6000] - GK * u[iteration % 6000]) * del_t + v[iteration % 6000];
-        if (iteration == intstim) {
+        if (iteration%STIMRATE == 0) {
             v[(iteration + 1) % 6000] = v[(iteration + 1) % 6000] + V_STIM;
         }
         u[(iteration + 1)%6000] = (v[iteration%6000] + BETA - GAMMA * u[iteration%6000]) * del_t + u[iteration % 6000];
@@ -164,6 +179,7 @@ class FHN2: UIViewController, ChartViewDelegate {
             let scaledValue = (maxScaled-minScaled)*(v[iteration%6000]-currentMin)/(currentMax-currentMin)+minScaled
             let entry = ChartDataEntry(x: Double(iteration), y: scaledValue)
             lineChartDataSet.addEntry(entry)
+            
         
             if (Double(iteration) >= 10001) {
                 lineChartDataSet.removeFirst()

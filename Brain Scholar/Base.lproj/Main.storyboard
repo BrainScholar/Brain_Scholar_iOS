@@ -221,14 +221,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.59999999999999998" minValue="0.10000000000000001" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wGS-SX-VLR">
-                                <rect key="frame" x="14" y="318" width="162" height="31"/>
+                                <rect key="frame" x="14" y="318" width="160" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="betaValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="btp-7a-Uns"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.10000000000000001" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="p1N-2c-f7t">
-                                <rect key="frame" x="199" y="318" width="162" height="31"/>
+                                <rect key="frame" x="199" y="318" width="160" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="gammaValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="uTB-p7-2Rh"/>
@@ -242,7 +242,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V Stim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghi-gM-aym">
-                                <rect key="frame" x="162" y="358" width="50" height="21"/>
+                                <rect key="frame" x="80" y="358" width="50" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -263,14 +263,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAS-QF-alS">
-                                <rect key="frame" x="175" y="387" width="43" height="21"/>
+                                <rect key="frame" x="90" y="387" width="43" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.90000000000000002" minValue="0.10000000000000001" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="7RO-Bm-Ucz">
-                                <rect key="frame" x="14" y="416" width="347" height="31"/>
+                                <rect key="frame" x="14" y="416" width="160" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="v_stimValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="sx4-io-be7"/>
@@ -342,6 +342,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="7ah-fi-gNF">
+                                <rect key="frame" x="199" y="416" width="160" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stimRateValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vuf-Jh-Pe0"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stim Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5y-wG-Fsq">
+                                <rect key="frame" x="242" y="358" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BK-7B-FyV">
+                                <rect key="frame" x="270" y="387" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -357,6 +378,8 @@
                         <outlet property="gkValue" destination="79K-hM-ktv" id="rth-Xj-bgt"/>
                         <outlet property="gnaSlider" destination="4WK-n0-xv0" id="6W2-z7-Rfz"/>
                         <outlet property="gnaValue" destination="s0u-DK-a9e" id="UMS-uF-jYd"/>
+                        <outlet property="stimRateSlider" destination="7ah-fi-gNF" id="pPy-Eh-TOi"/>
+                        <outlet property="stimRateValue" destination="1BK-7B-FyV" id="u3f-7u-21J"/>
                         <outlet property="v_stimSlider" destination="7RO-Bm-Ucz" id="YXy-Ig-Kzl"/>
                         <outlet property="v_stimValue" destination="JAS-QF-alS" id="i6s-C4-PS6"/>
                     </connections>
@@ -374,7 +397,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gtN-Yz-4E4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IHP-hS-v9M">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="940"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1050"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6C3-sY-A9j">
@@ -385,10 +408,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLq-fx-K4C">
-                                <rect key="frame" x="0.0" y="414" width="375" height="561"/>
+                                <rect key="frame" x="0.0" y="414" width="375" height="636"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8be-qd-ojC">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="545"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ex-n9-ffN">
                                                 <rect key="frame" x="169" y="33" width="36" height="21"/>
@@ -488,25 +511,11 @@
                                                     <action selector="v_stimValueChanged:" destination="TKR-Aj-eXA" eventType="valueChanged" id="CvL-B2-BCK"/>
                                                 </connections>
                                             </slider>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHY-lk-2gf">
-                                                <rect key="frame" x="181" y="424" width="12" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.025" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDH-xs-U6E">
-                                                <rect key="frame" x="166" y="444" width="55" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.025000000000000001" minValue="0.0" maxValue="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="I6i-ig-Mrh">
+                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="stimRateSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.01" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="I6i-ig-Mrh">
                                                 <rect key="frame" x="6" y="464" width="363" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
-                                                    <action selector="cValueChanged:" destination="TKR-Aj-eXA" eventType="valueChanged" id="MiN-sS-GaR"/>
+                                                    <action selector="stimRateValueChanged:" destination="TKR-Aj-eXA" eventType="valueChanged" id="TdV-OH-mWd"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQB-uI-JyC">
@@ -516,16 +525,51 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stim Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHY-lk-2gf">
+                                                <rect key="frame" x="150" y="422" width="74" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDH-xs-U6E">
+                                                <rect key="frame" x="174" y="442" width="43" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3j-ex-KMA">
+                                                <rect key="frame" x="180" y="505" width="12" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.025" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY3-Ya-3IZ">
+                                                <rect key="frame" x="166" y="525" width="60" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="cSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.025000000000000001" minValue="0.001" maxValue="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="1Fz-WP-aJA">
+                                                <rect key="frame" x="6" y="550" width="363" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="cValueChanged:" destination="TKR-Aj-eXA" eventType="valueChanged" id="Crh-3K-Rs2"/>
+                                                </connections>
+                                            </slider>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="545" id="DBg-5K-sKy"/>
+                                            <constraint firstAttribute="height" constant="600" id="DBg-5K-sKy"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="8be-qd-ojC" secondAttribute="trailing" id="I6h-M7-oDf"/>
-                                    <constraint firstAttribute="bottom" secondItem="8be-qd-ojC" secondAttribute="bottom" constant="16" id="Uvc-qg-sVD"/>
+                                    <constraint firstAttribute="bottom" secondItem="8be-qd-ojC" secondAttribute="bottom" id="Uvc-qg-sVD"/>
                                     <constraint firstItem="8be-qd-ojC" firstAttribute="leading" secondItem="HLq-fx-K4C" secondAttribute="leading" id="b4L-cK-Qsd"/>
                                     <constraint firstItem="8be-qd-ojC" firstAttribute="top" secondItem="HLq-fx-K4C" secondAttribute="top" id="hy8-Fm-Lhk"/>
                                     <constraint firstItem="8be-qd-ojC" firstAttribute="centerX" secondItem="HLq-fx-K4C" secondAttribute="centerX" id="lU6-5m-mTY"/>
@@ -553,7 +597,6 @@
                         <constraints>
                             <constraint firstItem="HLq-fx-K4C" firstAttribute="leading" secondItem="HaN-Po-SZh" secondAttribute="leading" id="6QD-Jh-Qai"/>
                             <constraint firstItem="HLq-fx-K4C" firstAttribute="top" secondItem="IHP-hS-v9M" secondAttribute="top" constant="414" id="EbJ-VJ-33T"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="HLq-fx-K4C" secondAttribute="bottom" constant="-35" id="Hwe-YR-4F8"/>
                             <constraint firstItem="f86-kh-GTv" firstAttribute="top" secondItem="HaN-Po-SZh" secondAttribute="bottom" constant="16" id="Mgo-Lu-AkO"/>
                             <constraint firstItem="HLq-fx-K4C" firstAttribute="leading" secondItem="6C3-sY-A9j" secondAttribute="leading" id="ONc-HE-o1g"/>
                             <constraint firstItem="HaN-Po-SZh" firstAttribute="top" secondItem="6C3-sY-A9j" secondAttribute="bottom" id="RXK-f0-4iR"/>
@@ -563,6 +606,7 @@
                             <constraint firstItem="f86-kh-GTv" firstAttribute="leading" secondItem="IHP-hS-v9M" secondAttribute="leadingMargin" constant="50" id="YLP-KP-y8o"/>
                             <constraint firstAttribute="trailing" secondItem="HLq-fx-K4C" secondAttribute="trailing" id="hj5-iA-lD7"/>
                             <constraint firstItem="HLq-fx-K4C" firstAttribute="leading" secondItem="IHP-hS-v9M" secondAttribute="leading" id="ouZ-ex-uki"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="HLq-fx-K4C" secondAttribute="bottom" id="pRn-Wc-5tA"/>
                             <constraint firstItem="HLq-fx-K4C" firstAttribute="top" secondItem="HaN-Po-SZh" secondAttribute="bottom" constant="55" id="qME-w7-0SV"/>
                             <constraint firstItem="HaN-Po-SZh" firstAttribute="top" secondItem="IHP-hS-v9M" secondAttribute="top" constant="64" id="uzL-Ei-zMk"/>
                             <constraint firstItem="HLq-fx-K4C" firstAttribute="top" secondItem="HaN-Po-SZh" secondAttribute="bottom" constant="55" id="vLT-hP-ihI"/>
@@ -570,12 +614,12 @@
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="940"/>
+                    <size key="freeformSize" width="375" height="1050"/>
                     <connections>
                         <outlet property="betaSlider" destination="CDJ-ul-OFH" id="dA8-NR-ZA7"/>
                         <outlet property="betaValue" destination="rS8-jK-vtU" id="XfW-aD-O97"/>
-                        <outlet property="cSlider" destination="I6i-ig-Mrh" id="xKN-Lg-Lxo"/>
-                        <outlet property="cValue" destination="VDH-xs-U6E" id="k0Q-1z-Xtx"/>
+                        <outlet property="cSlider" destination="1Fz-WP-aJA" id="N89-c1-Ql3"/>
+                        <outlet property="cValue" destination="dY3-Ya-3IZ" id="TMl-pt-IQa"/>
                         <outlet property="gammaSlider" destination="FLj-8a-Tz0" id="7DP-w1-Ozs"/>
                         <outlet property="gammaValue" destination="HXv-jj-gVN" id="Axk-Pk-tMK"/>
                         <outlet property="gkSlider" destination="6Ka-pY-sDP" id="YZI-VG-Whw"/>
@@ -583,22 +627,24 @@
                         <outlet property="gnaSlider" destination="hvC-Dl-O50" id="3Sw-dg-d41"/>
                         <outlet property="gnaValue" destination="ouc-Si-qhz" id="2P1-D6-qbe"/>
                         <outlet property="graphView" destination="HaN-Po-SZh" id="ENu-iI-Umo"/>
+                        <outlet property="stimRateSlider" destination="I6i-ig-Mrh" id="N6z-wi-Fii"/>
+                        <outlet property="stimRateValue" destination="VDH-xs-U6E" id="FbE-pZ-cei"/>
                         <outlet property="v_stimSlider" destination="GvF-K3-OEa" id="imR-bY-eal"/>
                         <outlet property="v_stimValue" destination="FV8-nC-wkt" id="lT9-Eh-Y4O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JrR-Xl-WIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="131"/>
+            <point key="canvasLocation" x="1036" y="130.43478260869566"/>
         </scene>
     </scenes>
     <resources>
         <image name="BrainScholarAppIcon(xxxhdpi) copy.png" width="192" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jl7-2o-87K"/>
-        <segue reference="22X-o4-Mpb"/>
         <segue reference="fOe-ps-gpD"/>
+        <segue reference="GVs-iD-0QF"/>
+        <segue reference="jl7-2o-87K"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
