@@ -156,14 +156,14 @@ class FHN2: UIViewController, ChartViewDelegate {
         //This method is called upon continuously and graphs one point at a time.
         u[0] = -1.1;
         v[0] = -1.2;
-        let Floor: Double = Double(iteration / 3000)
+        let Floor: Double = Double(iteration / STIMRATE)
         let stinum: Double = floor(Floor)
-        let stimt: Double = 3000 + 3000 * (stinum - 1)
+        let stimt: Double = Double(STIMRATE) + Double(STIMRATE) * (stinum - 1)
         let intstim: Int = Int(stimt)
             
         f[iteration % 6000] = v[iteration % 6000] * (1 - ((v[iteration % 6000] * v[iteration % 6000]) / 3));
         v[(iteration + 1) % 6000] = 1 / C * (GNA * f[iteration % 6000] - GK * u[iteration % 6000]) * del_t + v[iteration % 6000];
-        if (iteration%STIMRATE == 0) {
+        if (iteration == intstim) {
             v[(iteration + 1) % 6000] = v[(iteration + 1) % 6000] + V_STIM;
         }
         u[(iteration + 1)%6000] = (v[iteration%6000] + BETA - GAMMA * u[iteration%6000]) * del_t + u[iteration % 6000];
