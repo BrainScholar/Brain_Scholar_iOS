@@ -94,7 +94,7 @@
                                     <segue destination="XZN-Ks-nSQ" kind="show" id="URG-SR-H69"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cM-FY-xJm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FHNPhaseSpace" translatesAutoresizingMaskIntoConstraints="NO" id="3cM-FY-xJm">
                                 <rect key="frame" x="0.0" y="72" width="375" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -102,8 +102,10 @@
                                 <rect key="frame" x="16" y="323" width="343" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <string key="text">The FitzHugh–Nagumo model is an example of a relaxation oscillator because, if the external stimulus exceeds a certain threshold value, the system will exhibit a characteristic excursion in phase space, before the variables relax back to their rest values. 
+                                                                                         Cell membrane carries potential across both inner and outer surfaces which can be modeled using capacitor and resistor in parallel circuit.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -153,15 +155,26 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="c71-tG-5Ki"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4jF-sO-GrQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FHN" translatesAutoresizingMaskIntoConstraints="NO" id="4jF-sO-GrQ">
                                 <rect key="frame" x="0.0" y="72" width="375" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hfr-gi-uIA">
-                                <rect key="frame" x="16" y="323" width="343" height="336"/>
+                                <rect key="frame" x="16" y="323" width="343" height="417"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">The motivation for the FitzHugh-Nagumo model was to isolate conceptually the essentially mathematical properties of excitation and propagation from the electrochemical properties of sodium and potassium ion flow.                                                                                                                       The model consists of                                            
+- a voltage-like variable having cubic nonlinearity that allows regenerative self-excitation via a positive feedback, and
+- a recovery variable having a linear dynamics that provides a slower negative feedback.                
+                                                                                   The variables that are used to calculate the simulated action potential value are:
+- Psedo-sodium: default value= 0.9, min =0, max=10
+- Psedo-potassium: default value = 1.1, min = 0, max =  10
+- Beta: default value = 0.6, min = 0, max =1
+- Gamma: default value = 1, min = 0, max =2
+- Voltage of stimulus: default value = 0.9, min 0, max = 5
+- Capacitance: default value = 0.025, min = 0, max = 0.05
+- Rate of stimulation (time interval for stimulation)
+</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -171,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UI-wF-FbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-383.19999999999999" y="23.838080959520241"/>
+            <point key="canvasLocation" x="-417" y="24"/>
         </scene>
         <!--FHN1-->
         <scene sceneID="tne-QT-ifu">
@@ -635,16 +648,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JrR-Xl-WIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="130.43478260869566"/>
+            <point key="canvasLocation" x="1001" y="52"/>
         </scene>
     </scenes>
     <resources>
         <image name="BrainScholarAppIcon(xxxhdpi) copy.png" width="192" height="192"/>
+        <image name="FHN" width="616" height="348"/>
+        <image name="FHNPhaseSpace" width="467" height="276"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fOe-ps-gpD"/>
-        <segue reference="GVs-iD-0QF"/>
-        <segue reference="jl7-2o-87K"/>
+        <segue reference="a5V-Hy-DPd"/>
+        <segue reference="c71-tG-5Ki"/>
+        <segue reference="tDy-lq-AWb"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
